@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+        <div class="slide">
+
+
+            <div class="item" style="background-image: url(ima1.jpeg);">
+                <div class="content">
+                    <div class="name">Data security. ...</div>
+                    <div class="des">Data security is the process of safeguarding digital information throughout its
+                        entire life cycle to protect it from corruption, theft, or unauthorized access. It covers
+                        everything—hardware, software, storage devices, and user devices; access and administrative
+                        controls; and organizations' policies and procedures.</div>
+
+                </div>
+            </div>
+            <div class="item" style="background-image: url(ima2.avif);">
+                <div class="content">
+                    <div class="name">Cyber-Security</div>
+                    <div class="des">The main risk is a data breach or attack. Cloud computing introduces new threats in
+                        addition to those affecting on-premise infrastructure. Common data threats in the cloud include:
+                        Insecure APIs—cloud applications and services usually depend on API functionalities, exposing
+                        them to API vulnerabilities.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(ima4.webp);">
+                <div class="content">
+                    <div class="name">Mobile-Security</div>
+                    <div class="des">Definition. Mobile security is the strategy, infrastructure, and software used to
+                        protect any device that travels with users, including smartphones, tablets, and laptops.
+                        Cybersecurity for mobile devices includes protecting data on the local device and the
+                        device-connected endpoints and networking equipment.</div>
+
+                </div>
+            </div>
+            <div class="item" style="background-image: url(ima5.jpg);">
+                <div class="content">
+                    <div class="name">Network security.</div>
+                    <div class="des">Network security is any activity designed to protect the usability and integrity of
+                        your network and data. It includes both hardware and software technologies. It targets a variety
+                        of threats. It stops them from entering or spreading on your network. Effective network security
+                        manages access to the network.</div>
+
+                </div>
+            </div>
+            <div class="item" style="background-image: url(IMA7.jpg);">
+                <div class="content">
+                    <div class="name">Cloud security.   ...</div>
+                    <div class="des">Definition of cloud security
+
+                        Cloud security, also known as cloud computing security, is a collection of security measures
+                        designed to protect cloud-based infrastructure, applications, and data. These measures ensure
+                        user and device authentication, data and resource access control, and data privacy protection.
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="button">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        </div>
+
+        <script>
+
+            let next = document.querySelector('.next')
+            let prev = document.querySelector('.prev')
+
+            next.addEventListener('click', function () {
+                let items = document.querySelectorAll('.item')
+                document.querySelector('.slide').appendChild(items[0])
+            })
+
+            prev.addEventListener('click', function () {
+                let items = document.querySelectorAll('.item')
+                document.querySelector('.slide').prepend(items[items.length - 1])
+            })
+        </script>
+
+</body>
+
+</html>

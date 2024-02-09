@@ -1,0 +1,36 @@
+
+#nevbar {
+
+      height: 100px;
+      background-color: rgb(44, 40, 40);
+}
+
+a {
+      margin-right: 180px;
+}
+
+#bac {
+      height: 250px;
+      width: 200px;
+      background-color: rgb(117, 102, 102);
+      border: solid 2px black;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIIuEQnbsI_RahD47FojzvEVr8mVE-DwiYZ4pg6vt7oeH_h3fWAYgULPPo3-vbynBnx6k&usqp=CAU);
+      position: fixed;
+      right: 650px;
+
+}
+
+#container  {
+            height: 850px;
+            width: 850px; 
+            background-color: rgb(118, 192, 44); 
+            text-align: center;  
+              
+}
+
+#colo  {
+
+      color:rgb(165, 53, 53) ;
+      
+}   
+
